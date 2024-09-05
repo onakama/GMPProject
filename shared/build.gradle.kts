@@ -1,9 +1,14 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
 }
 
 kotlin {
+    val xcFrameworkName = "Shared"
+    val xcf = XCFramework(xcFrameworkName)
+
     androidTarget {
         compilations.all {
             kotlinOptions {
@@ -19,6 +24,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
+            xcf.add(this)
             isStatic = true
         }
     }
