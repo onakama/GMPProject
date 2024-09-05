@@ -16,7 +16,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "GMPProject",
-            path: "./shared/build/XCFrameworks/release"),
-            checksum:"503721cb735de335c1067fd46afa2e45d27ef2b146d0795f3c259b406eb8bd3f")
+            path: "./shared/build/XCFrameworks/release",
+            checksum: "503721cb735de335c1067fd46afa2e45d27ef2b146d0795f3c259b406eb8bd3f"),
     ]
 )
