@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "gmpproject",
+          "kind" : "root",
+          "location" : "/Users/taisei.sumiyama/Documents/GitHub/GMPProject",
+          "name" : "GMPProject"
+        },
+        "path" : "/Users/taisei.sumiyama/Documents/GitHub/GMPProject/shared/build/XCFrameworks/release/Shared.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "Shared"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}
