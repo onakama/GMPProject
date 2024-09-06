@@ -24,6 +24,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
+            binaryOption("bundleId", "org.example.${xcFrameworkName}")
             xcf.add(this)
             isStatic = true
         }
