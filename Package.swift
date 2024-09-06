@@ -13,7 +13,7 @@ let package = Package(
    ],
    targets: [
       .binaryTarget(
-         name: "Shared",
+         name: "gmpproject",
          path: "shared/build/XCFrameworks/release/Shared.xcframework")
    ]
 )
