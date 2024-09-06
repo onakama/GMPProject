@@ -4,19 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "GMPProject",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "GMPProject",
-            targets: ["GMPProject"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "GMPProject",
-            path: "./shared/build/XCFrameworks/release",
-            checksum: "503721cb735de335c1067fd46afa2e45d27ef2b146d0795f3c259b406eb8bd3f"),
-    ]
+   name: "Shared",
+   platforms: [
+     .iOS(.v14),
+   ],
+   products: [
+      .library(name: "Shared", targets: ["Shared"])
+   ],
+   targets: [
+      .binaryTarget(
+         name: "Shared",
+         url: "shared/build/XCFrameworks/release/Shared.xcframework")
+   ]
 )
