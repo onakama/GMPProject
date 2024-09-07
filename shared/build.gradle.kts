@@ -6,7 +6,7 @@ plugins {
 }
 
 kotlin {
-    val xcFrameworkName = "gmpproject"
+    val xcFrameworkName = "Shared"
     val xcf = XCFramework(xcFrameworkName)
 
     androidTarget {
@@ -23,7 +23,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "gmpproject"
+            baseName = "shared"
             binaryOption("bundleId", "org.example.${xcFrameworkName}")
             xcf.add(this)
             isStatic = true

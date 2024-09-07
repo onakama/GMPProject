@@ -13,7 +13,7 @@
         "source" : {
           "type" : "local"
         },
-        "targetName" : "gmpproject"
+        "targetName" : "Shared"
       }
     ],
     "dependencies" : [
