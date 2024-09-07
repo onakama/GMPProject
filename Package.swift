@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-   name: "gmpproject",
+   name: "Shared",
    platforms: [
      .iOS(.v14),
    ],
