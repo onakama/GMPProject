@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-   name: "shared",
+   name: "GMPProject",
    platforms: [
      .iOS(.v14),
    ],
    products: [
-      .library(name: "shared", targets: ["shared"])
+      .library(name: "GMPProject", targets: ["GMPProject"])
    ],
    targets: [
       .binaryTarget(
-         name: "shared",
-         path: "shared/build/XCFrameworks/release/shared.xcframework"
+         name: "GMPProject",
+         path: "shared/build/XCFrameworks/release/Shared.xcframework"
          )
    ]
 )

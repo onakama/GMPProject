@@ -6,7 +6,7 @@ plugins {
 }
 
 kotlin {
-    val xcFrameworkName = "shared"
+    val xcFrameworkName = "Shared"
     val xcf = XCFramework(xcFrameworkName)
 
     androidTarget {
